@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:quicktask/core/widgets/main_navigation_screen.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'features/todo/presentation/screens/todo_screen.dart';
 
@@ -31,7 +32,7 @@ class MainApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
         useMaterial3: true,
       ),
-      home: const TodoScreen(),
+      home: const MainNavigationScreen(),
     );
   }
 }
